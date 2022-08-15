@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --very-dark-blue-mainBG: hsl(217, 54%, 11%);
+    --very-dark-blue-cardBG: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Outfit;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue-mainBG);
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    background-color: var(--very-dark-blue-cardBG);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 20px;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.view-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 125px;
+    padding-left: 134px;
+    padding-right: 127px;
+    padding-bottom: 136px;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+.view-icon:hover {
+    cursor: pointer;
+    opacity: 1;
+    background-color: hsla(178, 100%, 50%, 0.4);
+}
+
+.title {
+    color: var(--white);
+}
+
+h2 {
+    font-weight: 600;
+    text-align: left;
+    padding: 20px 0px 20px 0px;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: var(--soft-blue);
+}
+
+.mid-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mid-section-a {
+    position: absolute;
+    margin-left: 18px;
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.clock-icon {
+    position: absolute;
+    margin-left: 213px;
+    margin-top: 2px;
+}
+
+.mid-section-b {
+    position: relative;
+    color: var(--soft-blue);
+    font-weight: 400;
+}
+
+.divider {
+    height: 1px;
+    border-style: none;
+    margin-top: 10px;
+    background-color: var(--very-dark-blue-line);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+} 
+
+.user-img {
+    width: 13%;
+    margin-top: 10px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.footer-text {
+    position: relative;
+    margin: 10px 0px 0px 6px;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.footer-text-a {
+    color: var(--soft-blue);
+}
+
+.footer-text-b {
+    position: relative;
+}
+
+.footer-text-b:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.challenger-info {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.challenger-info a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.challenger-info a:hover {
+    color: var(--soft-blue);
+}
+
+@media screen and (max-width: 1440px) {
+    .card {
+        margin: 20px auto;
+        background-color: var(--very-dark-blue-cardBG);
+        width: 350px;
+        border-radius: 25px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        margin: 20px auto;
+        background-color: var(--very-dark-blue-cardBG);
+        width: 350px;
+        border-radius: 25px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
